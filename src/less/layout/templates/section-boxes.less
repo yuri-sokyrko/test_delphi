@@ -1,0 +1,33 @@
+
+/*
+================================================================================
+|                                 SECTION BOXES                                |
+================================================================================
+*/
+.section-boxes {
+    display: flex;
+    margin: 0 -2px -4px;
+    margin-top: auto;
+
+    &__item {
+        flex: 1 1 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 2px 4px;
+        padding: 10vh 0;
+        background-color: @custom-color;
+        cursor: pointer;
+        
+
+        img {
+            transition: @default-transition;
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.2);
+            }
+        }
+    }
+}

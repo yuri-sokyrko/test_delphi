@@ -1,0 +1,100 @@
+
+/*
+================================================================================
+|                                     TABS                                     |
+================================================================================
+*/
+.tabs {
+    &__top {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -2px;
+    }
+
+    &__button {
+        flex: 1 1 120px;
+        border: none;
+        padding: 12px @grid-gap;
+        background-color: @main-color;
+        border-top: 4px solid @base-bg;
+        text-align: center;
+        color: @text-color;
+        margin: 0 2px;
+        transition: @default-transition;
+
+        &:hover, &.active {
+            background-color: @custom-color;
+        }
+    }
+
+    &__body {
+        background-color: @main-color;
+        border-top: 4px solid @base-bg;
+        padding: calc(@grid-gap * 4) calc(@grid-gap * 2);
+    }
+}
+
+/*
+================================================================================
+|                                     MOBILE                                   |
+================================================================================
+*/
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1279px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+    .tabs {
+        &__button {
+            flex: 1 1 240px
+        }
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 575px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 576px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1280px) {
+
+}

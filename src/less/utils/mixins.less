@@ -1,0 +1,82 @@
+.transition(@default-transition) {
+  -webkit-transition: @default-transition;
+     -moz-transition: @default-transition;
+      -ms-transition: @default-transition;
+		-o-transition: @default-transition;
+           transition: @default-transition;
+}
+
+.radius(@border-radius) {
+  -webkit-border-radius: @border-radius;
+     -moz-border-radius: @border-radius;      
+           border-radius:@border-radius;
+}
+
+.rotate(@rotate) {
+  -webkit-transform: rotate(@rotate);
+     -moz-transform: rotate(@rotate);
+      -ms-transform: rotate(@rotate);
+		-o-transform: rotate(@rotate);
+           transform: rotate(@rotate);
+}
+
+.scale(@scale) {
+  -webkit-transform: scale(@scale);
+     -moz-transform: scale(@scale);
+      -ms-transform: scale(@scale);
+		-o-transform: scale(@scale);
+           transform: scale(@scale);
+}
+
+.shadow(@shadow) {
+  -webkit-box-shadow: (@shadow);
+     -moz-box-shadow: (@shadow);
+      -ms-box-shadow: (@shadow);
+		-o-box-shadow: (@shadow);
+           box-shadow: (@shadow);
+}
+
+.gradient(@direction,@color1,@color2) {
+    background-image: (linear-gradient(@direction, @color1, @color2));
+}
+
+.center_transform() {
+  	position:absolute;
+	left:50%;top:50%;
+	transform:translate(-50%, -50%);
+	-moz-transform:translate(-50%, -50%);
+	-webkit-transform:translate(-50%, -50%);
+	-ms-transform:translate(-50%, -50%);
+	-o-transform:translate(-50%, -50%);
+}
+
+.vertical_center_transform() {
+  	position:absolute;
+	left:0;top:50%;
+	width: 100%;
+	transform:translate(0, -50%);
+	-moz-transform:translate(0, -50%);
+	-webkit-transform:translate(0, -50%);
+	-ms-transform:translate(0, -50%);
+	-o-transform:translate(0, -50%);
+}
+
+.button(@button-bg, @button-border, @button-border-color, @button-pad, @button-size, @button-line-height, @height-button, @button-radius) {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 0 0 0;
+	padding: 10px @button-pad 0 @button-pad;
+	background: @button-bg;
+	border: @button-border solid @button-border-color;
+	font-size: @button-size;
+	line-height: @button-line-height;
+	height: @height-button;
+	position: relative;
+	border-radius: @button-radius;
+}
+
+.font(@font-s, @font-h, @font-c) {
+    font-size: @font-s;
+    line-height: @font-h;
+    color:@font-c;
+}
